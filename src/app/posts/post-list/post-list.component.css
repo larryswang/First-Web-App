@@ -10,3 +10,7 @@
 mat-spiner {
   margin: auto;
 }
+
+input[type="file"] {
+  visibility: hidden;
+}
