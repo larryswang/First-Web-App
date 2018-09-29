@@ -10,7 +10,7 @@ const app = express();
 
 mongoose
   .connect(
-    "mongodb+srv://shiyu:CpohcewwifOTtqTh@cluster0-i7agv.mongodb.net/node-angular?retryWrites=true"
+    "mongodb+srv://shiyu:CpohcewwifOTtqTh@cluster0-i7agv.mongodb.net/node-angular"
   )
   .then(() => {
     console.log("Connected to database!");
@@ -38,6 +38,5 @@ app.use((req, res, next) => {
 
 app.use("/api/posts", postsRoutes);
 app.use("/api/user", userRoutes);
-
 
 module.exports = app;
