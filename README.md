@@ -1,6 +1,21 @@
-# MeanCourse
+# My First App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+This is a full website build project, consistent with the MEAN Stack Guide on Udemy
+`https://www.udemy.com/angular-2-and-nodejs-the-practical-guide/learn/v4/content`
+
+To visit the website, go to `http://bbs-style-website-mean-angular-node.s3-website.us-east-2.amazonaws.com/`
+Welcome to create your post!
+
+## Notice
+This project is for study use only, cannot be used for business. For any questions or concerns, please go to Larry(Shiyu) Wang `shiyuw@umich.edu`
+
+## Content
+1. Angular front end, a bbs style webpage that has content of posts with images
+2. MongoDB atlas as database, store any content from user posts and user information
+3. User Authorization and Authentication, with sign up and login credentials
+4. Error handling which enhance user experiences
+5. AWS as server for app deployment
+
 
 ## Development server
 
@@ -25,3 +40,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
