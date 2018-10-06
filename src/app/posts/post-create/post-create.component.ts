@@ -1,11 +1,11 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { ActivatedRoute, ParamMap } from "@angular/router";
+import { Subscription } from "rxjs";
 
 import { PostsService } from "../posts.service";
 import { Post } from "../post.model";
 import { mimeType } from "./mime-type.validator";
-import { Subscription } from "rxjs";
 import { AuthService } from "../../auth/auth.service";
 
 @Component({
@@ -31,8 +31,9 @@ export class PostCreateComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
-    this.authStatusSub = this.authService.getAuthStatusListener().subscribe(
-      authStatus => {
+    this.authStatusSub = this.authService
+      .getAuthStatusListener()
+      .subscribe(authStatus => {
         this.isLoading = false;
       });
     this.form = new FormGroup({
